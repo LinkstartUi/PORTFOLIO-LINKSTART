@@ -23,7 +23,6 @@ video {
   background-size: cover;
   background-position: center; /*  */
   background-repeat: no-repeat;
-
 }
 
 button {
@@ -34,9 +33,9 @@ button {
   margin: 1rem auto;
   font-size: 1.3rem;
   color: #fff;
-  border-radius: 3px; 
+  border-radius: 3px;
   cursor: pointer;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-color: #2554e3;
   box-shadow: 0 8px 15px -10px #2554e3;
   background-image: linear-gradient(
@@ -57,7 +56,7 @@ button:hover {
 
 .about .max-width {
   background-color: rgb(0, 0, 0);
-  height:500px;
+  height: 500px;
 }
 .container2 {
   display: flex;
@@ -219,6 +218,7 @@ section .title {
   margin-bottom: 60px;
   padding-bottom: 20px;
   font-family: "Poppins", sans-serif;
+  text-shadow: 0 0 30px #77ff00;
 }
 section .title::before {
   content: "";
@@ -253,12 +253,11 @@ section .title::after {
     #b2d6ff 100%
   ); */
 }
-.text-2{
+.text-2 {
   font-size: 20px;
   font-weight: 500;
   color: #ffffff;
   text-shadow: 0 0 30px #ffffff;
-  
 }
 .navbar.sticky {
   padding: 15px 0;
@@ -425,6 +424,10 @@ section .title::after {
 }
 .about .about-content .right p {
   text-align: justify;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  color: rgb(0, 225, 83);
 }
 .about .about-content .right a {
   display: inline-block;
@@ -494,22 +497,33 @@ section .title::after {
 
 /* skills section styling */
 .skills .max-width {
-  background-color: #fff;
+  background-color: rgb(1, 1, 1);
   opacity: 0.7;
+}
+.skills .title {
+  color: #fff;
+}
+.skills .title::before {
+  background: #fff;
 }
 .skills .title::after {
   content: "what i know";
 }
 .skills .skills-content .column {
   width: calc(50% - 30px);
+  padding: 30px;
 }
 .skills .skills-content .left .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
+  color: #fff;
 }
 .skills .skills-content .left p {
   text-align: justify;
+  font-size: 25px;
+  line-height: 30px;
+  color: #fff;
 }
 .skills .skills-content .left a {
   display: inline-block;
@@ -520,15 +534,16 @@ section .title::after {
   padding: 8px 16px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid rgb(67, 169, 209);
   transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover {
   color: rgb(67, 169, 209);
   background: none;
+  box-shadow: 0 0 10px rgb(67, 169, 209);
 }
 .skills .skills-content .right .bars {
   margin-bottom: 15px;
+  color: #fff;
 }
 .skills .skills-content .right .info {
   display: flex;
@@ -543,7 +558,7 @@ section .title::after {
 .skills .skills-content .right .line {
   height: 5px;
   width: 100%;
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
   position: relative;
 }
 .skills .skills-content .right .line::before {
@@ -575,7 +590,6 @@ section .title::after {
 .skills-content .right .Python::before {
   width: 60%;
 }
-
 
 /* teams section styling */
 .teams .title::after {
@@ -643,8 +657,15 @@ section .title::after {
 }
 
 /* contact section styling */
+.contact .title {
+  color: #fff;
+}
 .contact .title::after {
   content: "get in touch";
+}
+.contact .max-width {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
 }
 .contact .contact-content .column {
   width: calc(50% - 30px);
@@ -665,28 +686,24 @@ section .title::after {
   display: flex;
   height: 65px;
   align-items: center;
-  border : 1px solid rgb(0, 0, 0);
-    border-radius: 6px;
-    padding: 0 10px;
-    margin-bottom: 10px;
-
-
-
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 6px;
+  padding: 0 10px;
+  margin-bottom: 10px;
 }
 .contact .contact-content .row .info {
   margin-left: 30px;
-
 }
 .contact .contact-content .row i {
   font-size: 25px;
   color: rgb(67, 169, 209);
-    transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 .contact .contact-content .info .head {
   font-weight: 500;
 }
 .contact .contact-content .info .sub-title {
-  color: rgb(0, 229, 95);
+  color: rgb(255, 255, 255);
 }
 .contact .right form .fields {
   display: flex;
@@ -715,7 +732,6 @@ section .title::after {
   font-size: 17px;
   font-family: "Poppins", sans-serif;
   transition: all 0.3s ease;
-  
 }
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus {
@@ -774,11 +790,10 @@ footer span {
   .about .about-content .left img {
     height: 350px;
     width: 350px;
-
   }
-    .about .about-content .right .text {
-        font-size: 20px;
-    }
+  .about .about-content .right .text {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -907,9 +922,8 @@ footer span {
     font-size: 23px;
     line-height: 38px;
   }
-  .container2{
+  .container2 {
     margin-top: -100px;
-
   }
 }
 /* ===========================cartes ================================= */
@@ -1085,6 +1099,10 @@ h1 {
   .col {
     width: calc(33.333333% - 2rem);
   }
+  html {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 48rem) {
@@ -1107,14 +1125,16 @@ h1 {
   left: 50%; */
 }
 
-.glitch, .glow {
+.glitch,
+.glow {
   color: #0dabf4;
   position: relative;
   font-size: 9vw;
   animation: glitch 5s 5s infinite;
 }
 
-.glitch::before, .glow::before {
+.glitch::before,
+.glow::before {
   content: attr(data-text);
   position: absolute;
   left: -2px;
@@ -1122,10 +1142,12 @@ h1 {
   background: black;
   overflow: hidden;
   top: 0;
-  animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+  animation: noise-1 3s linear infinite alternate-reverse,
+    glitch 5s 5.05s infinite;
 }
 
-.glitch::after, .glow::after {
+.glitch::after,
+.glow::after {
   content: attr(data-text);
   position: absolute;
   left: 2px;
@@ -1343,7 +1365,12 @@ h1 {
   height: 100%;
   top: 0;
   left: 0;
-  background: repeating-linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.05) 0.5%, transparent 1%);
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(255, 255, 255, 0.05) 0.5%,
+    transparent 1%
+  );
   animation: fudge 7s ease-in-out alternate infinite;
 }
 
@@ -1366,7 +1393,7 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
   font-size: 0.8vw;
-  color: rgba(165, 141, 141, 0.4);
+  color: rgb(30, 255, 0);
   text-transform: uppercase;
   letter-spacing: 1em;
   text-align: center;
