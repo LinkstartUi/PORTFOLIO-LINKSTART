@@ -342,7 +342,6 @@ section .title::after {
 .home {
   display: flex;
   background: url("monde.jpg") no-repeat center;
-  height: 80vh;
   color: #fff;
   min-height: 500px;
   background-size: cover;
@@ -1366,7 +1365,7 @@ h1 {
   }
 }
 .scanlines {
-  overflow: hidden;
+  /* overflow: hidden; */
   mix-blend-mode: difference;
 }
 
